@@ -124,7 +124,7 @@ Confirma que una solicitud POST a una ruta inexistente (/api/otro) devuelva cód
 
 # Licencia
 
-* This project is licensed under the MIT License - see the /LICENSE.md file for details
+* This project is licensed under the MIT License - see the ## LICENSE.md file for details
 
 # Agradecimientos
 
