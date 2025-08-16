@@ -7,7 +7,7 @@ Archivos JavaScript
 Formatos CSS
 Imagenes
 
-## Descripcion del aplicativo##
+## Descripcion del aplicativo
 
 La aplicacion web se diseño con la idea de explorar y gestionar los archivos. La idea es proporcionar una interfaz de facil uso la cual permita interactuar con elementos de JavaScript, CSS, HTML y imagenes de forma eficaz.
 
