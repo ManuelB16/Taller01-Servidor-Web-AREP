@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Web</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="format.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="nav__title">Servidor Web Inicial</h2>
+    </header>
+
+    <div class="btn-container-wrapper">
+        <h3>Archivos disponibles</h3>
+        <div class="btn-container">
+            <button class="btn" onclick="abrirArchivo('index.html')">HTML</button>
+            <button class="btn" onclick="abrirArchivo('format.css')">CSS</button>
+            <button class="btn" onclick="abrirArchivo('code.js')">JavaScript</button>
+            <button class="btn" onclick="abrirArchivo('PNG/parrot.jpg')">Imagen</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Servidor Web.
+    </footer>
+
+    <script>
+        function abrirArchivo(nombreArchivo) {
+            window.open(nombreArchivo, '_blank');
+        }
+    </script>
+
+    <script src="code.js"></script>
+</body>
+</html>
