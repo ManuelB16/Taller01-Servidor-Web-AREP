@@ -79,23 +79,23 @@ mvn exec:java -Dexec.mainClass="Taller1.server.SimpleHttpServer"
 
 ## Descripcion de las pruebas
 
-- testGetApiSaludo
+- testGetApiSaludo:
  
 Verifica que la solicitud GET a la ruta /api/saludo responda con código HTTP 200 OK y contenga el mensaje esperado "¡Hola desde el servidor!".
 
-- testGetApiFecha
+- testGetApiFecha:
  
 Valida que la solicitud GET a /api/fecha devuelva código HTTP 200 OK y que la respuesta incluya la palabra "fecha".
 
-- testGetApiNoEncontrada
+- testGetApiNoEncontrada:
 
 Comprueba que una solicitud GET a una ruta inexistente (/api/nada) devuelva código HTTP 404 Not Found y contenga el texto "Recurso no encontrado".
 
-- testPostApiEnviar
+- testPostApiEnviar:
 
 Evalúa que una solicitud POST a /api/enviar con un cuerpo JSON como {"nombre":"Manuel"} sea procesada correctamente, respondiendo con HTTP 200 OK y el mensaje "Datos recibidos".
 
-- testPostApiNoEncontrada
+- testPostApiNoEncontrada:
 
 Confirma que una solicitud POST a una ruta inexistente (/api/otro) devuelva código HTTP 404 Not Found.
 
@@ -121,3 +121,11 @@ Confirma que una solicitud POST a una ruta inexistente (/api/otro) devuelva cód
 # Autor
 
 * Manuel Felipe Barrera
+
+# Licencia
+
+* This project is licensed under the MIT License - see the LICENSE.md file for details
+
+# Agradecimientos
+
+* Agradecimientos al docente de la materia Daniel Benavides por su guia durante este desarrollo.
