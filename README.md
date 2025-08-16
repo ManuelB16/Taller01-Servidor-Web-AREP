@@ -80,18 +80,23 @@ mvn exec:java -Dexec.mainClass="Taller1.server.SimpleHttpServer"
 ## Descripcion de las pruebas
 
 - testGetApiSaludo
+ 
 Verifica que la solicitud GET a la ruta /api/saludo responda con código HTTP 200 OK y contenga el mensaje esperado "¡Hola desde el servidor!".
 
 - testGetApiFecha
+ 
 Valida que la solicitud GET a /api/fecha devuelva código HTTP 200 OK y que la respuesta incluya la palabra "fecha".
 
 - testGetApiNoEncontrada
+
 Comprueba que una solicitud GET a una ruta inexistente (/api/nada) devuelva código HTTP 404 Not Found y contenga el texto "Recurso no encontrado".
 
 - testPostApiEnviar
+
 Evalúa que una solicitud POST a /api/enviar con un cuerpo JSON como {"nombre":"Manuel"} sea procesada correctamente, respondiendo con HTTP 200 OK y el mensaje "Datos recibidos".
 
 - testPostApiNoEncontrada
+
 Confirma que una solicitud POST a una ruta inexistente (/api/otro) devuelva código HTTP 404 Not Found.
 
 ## Caracteristicas iniciales
