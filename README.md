@@ -37,17 +37,17 @@ El servidor procesa estas solicitudes y da los archivos correspondientes desde e
 
 En ese mismo orden, el usuario solicita contenido al servidor, de ahi el sistema de construcción (Maven) compila y empaqueta la aplicacion del servidor, se verifica que el servidor funcione correctamente con el sistema de pruebas, en este punto se inicializa y se gestiona el ciclo de vida del servidor, procesando las solicitudes y envia las respuestas correspondientes de los archivos HTML, CSS, JavaScript e Imagenes.
 
-## Instruciones de uso
+# Instruciones de uso
 
 Con estas instrucciones se puede obtener una copia del servidor en la maquina local con la finalidad de desarrollar y probar el msimo.
 
-# Tecnologias usadas
+## Tecnologias usadas
 
 - Maven como gestionar de dependencias y automatizacion de construccion para Java.
 - JavaScript como lenguaje de programacion para interactividad en la web.
 - Java como lenguaje de programacion fuerte para aplicaciones empresariales y backend.
 
-# Instalación
+## Instalación
 
 Con esto se clona el proyecto en la maquina local:
 
@@ -58,7 +58,7 @@ git checkout Taller01-Servidor-Web-AREP
 mvn clean compile
 ```
 
-# Ejecución de la aplicación
+## Ejecución de la aplicación
 
 Para inicializar la aplicacion se usa:
 
@@ -118,6 +118,6 @@ Confirma que una solicitud POST a una ruta inexistente (/api/otro) devuelva cód
 
 <img width="771" height="711" alt="image" src="https://github.com/user-attachments/assets/2ff16708-a092-4997-9dfc-726a31fd3608" />
 
-## Autor
+# Autor
 
 * Manuel Felipe Barrera
