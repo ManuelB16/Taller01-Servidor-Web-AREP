@@ -1,15 +1,15 @@
 # Taller01-Servidor-Web-AREP
 
-En este taller, se reviso y implemento el funcionamiento de un servidor web capaz de manejar multiples solicitudes no concurrentes. La idea principal es que el servidor lea los archivos desde el disco local y este responda con los archivos solicitados por el documento, como:
+En este taller, se revisó y implementó el funcionamiento de un servidor web capaz de manejar múltiples solicitudes no concurrentes. La idea principal es que el servidor lea los archivos desde el disco local y este responda con los archivos solicitados por el documento, como:
 
-Paginas HTML
+Páginas HTML
 Archivos JavaScript
 Formatos CSS
-Imagenes
+Imágenes
 
-## Descripcion del aplicativo
+## Descripción del aplicativo
 
-La aplicacion web se diseño con la idea de explorar y gestionar los archivos. La idea es proporcionar una interfaz de facil uso la cual permita interactuar con elementos de JavaScript, CSS, HTML y imagenes de forma eficaz.
+La aplicación web se diseñó con la idea de explorar y gestionar los archivos. La idea es proporcionar una interfaz de fácil uso la cual permita interactuar con elementos de JavaScript, CSS, HTML y imagenes de forma eficaz.
 
 ## Arquitectura
 
@@ -18,13 +18,13 @@ Es aquel que realizara las solicitudes HTTP
 
 - Navegador:
 
-Es el "mensajero" entre el el usuarios y el servidor.
+Es el "mensajero" entre el usuario y el servidor.
 
 - Servidor HTTP
 
-Es el servidor que procesa las solicitudes HTTP dadas por el navegador, este puede tener una infraestructura mas amplia.
+Es el servidor que procesa las solicitudes HTTP dadas por el navegador, este puede tener una infraestructura más amplia.
 
-El navegador envia las solicitudes HTTP al servidor por el puerto 35000 para diferentes rutas:
+El navegador envía las solicitudes HTTP al servidor por el puerto 35000 para diferentes rutas:
 
 - ./code.js: Archivo de JavaScript.
 - ./index.html: Cargar el archivo principal de la pagina web.
@@ -35,21 +35,21 @@ El servidor procesa estas solicitudes y da los archivos correspondientes desde e
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f04df1d2-fa9e-4356-a765-7571eb8e662c" />
 
-En ese mismo orden, el usuario solicita contenido al servidor, de ahi el sistema de construcción (Maven) compila y empaqueta la aplicacion del servidor, se verifica que el servidor funcione correctamente con el sistema de pruebas, en este punto se inicializa y se gestiona el ciclo de vida del servidor, procesando las solicitudes y envia las respuestas correspondientes de los archivos HTML, CSS, JavaScript e Imagenes.
+En ese mismo orden, el usuario solicita contenido al servidor, de ahí el sistema de construcción (Maven) compila y empaqueta la aplicación del servidor, se verifica que el servidor funcione correctamente con el sistema de pruebas, en este punto se inicializa y se gestiona el ciclo de vida del servidor, procesando las solicitudes y envía las respuestas correspondientes de los archivos HTML, CSS, JavaScript e Imagenes.
 
-# Instruciones de uso
+# Instrucciones de uso
 
-Con estas instrucciones se puede obtener una copia del servidor en la maquina local con la finalidad de desarrollar y probar el msimo.
+Con estas instrucciones se puede obtener una copia del servidor en la máquina local con la finalidad de desarrollar y probar el mismo.
 
-## Tecnologias usadas
+## Tecnologías usadas
 
-- Maven como gestionar de dependencias y automatizacion de construccion para Java.
-- JavaScript como lenguaje de programacion para interactividad en la web.
-- Java como lenguaje de programacion fuerte para aplicaciones empresariales y backend.
+- Maven como gestionar de dependencias y automatización de construcción para Java.
+- JavaScript como lenguaje de programación para interactividad en la web.
+- Java como lenguaje de programación fuerte para aplicaciones empresariales y backend.
 
 ## Instalación
 
-Con esto se clona el proyecto en la maquina local:
+Con esto se clona el proyecto en la máquina local:
 
 ```
 git clone https://github.com/ManuelB16/Taller01-Servidor-Web-AREP
@@ -60,13 +60,13 @@ mvn clean compile
 
 ## Ejecución de la aplicación
 
-Para inicializar la aplicacion se usa:
+Para inicializar la aplicación se usa:
 
 ```
 mvn exec:java -Dexec.mainClass="Taller1.server.SimpleHttpServer"
 ```
 
-Con esto se limpiara cualquier construccion previa, se compilará y empaquetará en un jar para poder ejecutar la aplicación.
+Con esto se limpiará cualquier construcción previa, se compilará y empaquetará en un jar para poder ejecutar la aplicación.
 
 ## Pruebas
 
@@ -77,7 +77,7 @@ mvn exec:java -Dexec.mainClass="Taller1.server.SimpleHttpServer"
 ```
 <img width="1463" height="539" alt="image" src="https://github.com/user-attachments/assets/091a61fe-23c9-44c9-8ff3-2015b8f05f32" />
 
-## Descripcion de las pruebas
+## Descripción de las pruebas
 
 - testGetApiSaludo:
  
@@ -99,7 +99,7 @@ Evalúa que una solicitud POST a /api/enviar con un cuerpo JSON como {"nombre":"
 
 Confirma que una solicitud POST a una ruta inexistente (/api/otro) devuelva código HTTP 404 Not Found.
 
-## Caracteristicas iniciales
+## Características iniciales
 
 1. Interfaz
 
@@ -108,7 +108,7 @@ Confirma que una solicitud POST a una ruta inexistente (/api/otro) devuelva cód
 
 2. Gestión de archivos:
 
-* Botones interactivos para abrir y visualizar archivos claves como:
+* Botones interactivos para abrir y visualizar archivos clave como:
 * JavaScript (code.js)
 * CSS (format.css)
 * HTML (index.html)
@@ -128,4 +128,4 @@ Confirma que una solicitud POST a una ruta inexistente (/api/otro) devuelva cód
 
 # Agradecimientos
 
-* Agradecimientos al docente de la materia Daniel Benavides por su guia durante este desarrollo.
+* Agradecimientos al docente de la materia Daniel Benavides por su guía durante este desarrollo.
